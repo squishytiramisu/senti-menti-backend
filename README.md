@@ -1,5 +1,9 @@
 # Senti Menti Backend
 ### Sentiment analysis tool backend for stock news, built with Kotlin Spring Boot
+
+If the images are not loading, please refer to the GitHub repo
+GitHub Repo: https://github.com/squishytiramisu/senti-menti-backend/blob/master/README.md
+
 ![image](https://github.com/squishytiramisu/senti-menti-backend/assets/60038184/c523ad01-60f7-430b-ab33-4ba964f9a5f8)
 
 ![image](https://github.com/squishytiramisu/senti-menti-backend/assets/60038184/be85d13c-a37f-427a-a3b4-a70301d07d12)
