@@ -1,0 +1,36 @@
+version: '3.9'
+
+
+services:
+  app:
+    container_name: app
+    image: csb/app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        DB: ${DB}
+        DB_USERNAME: ${DB_USERNAME}
+        DB_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "8080:8080"
+    environment:
+      DB: jdbc:postgresql://db:5400/sentimenti
+      DB_USERNAME: sentimenti
+      DB_PASSWORD: sentimenti
+    depends_on:
+      - db
+  db:
+    container_name: db
+    image: postgres:12
+    ports:
+      - "5400:5400"
+    environment:
+      POSTGRES_USER: sentimenti
+      POSTGRES_PASSWORD: sentimenti
+      POSTGRES_DB: sentimenti
+      PGPORT: 5400
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata: {}
