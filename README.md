@@ -1,6 +1,8 @@
 # Senti Menti Backend
 ### Sentiment analysis tool backend for stock news, built with Kotlin Spring Boot
 
+**Frontend built with Next.js!**
+
 If the images are not loading, please refer to the GitHub repo
 GitHub Repo: https://github.com/squishytiramisu/senti-menti-backend/blob/master/README.md
 
@@ -14,12 +16,17 @@ GitHub Repo: https://github.com/squishytiramisu/senti-menti-backend/blob/master/
 # Usage
 To interact with the backend, I recommend using the frontend created for this project: https://github.com/squishytiramisu/Sentimenti-UI/tree/master
 
+### To run the backend:
 ``` bash
 docker compose up -d db
-# Start the Kotlin project
-# Run the UI 
+# Start the Kotlin project ( IntelliJ )
 ```
 
+### To run the frontend:
+Either use the frontend linked above or follow these steps there or use the postman collection
+Link to UI: https://github.com/squishytiramisu/Sentimenti-UI/tree/master
+
+### Interact with the app with the UI
 1. Navigate to localhost:3000
 2. Click on the Login button
 3. Create and account named admin

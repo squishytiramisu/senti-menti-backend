@@ -1,0 +1,335 @@
+{
+	"info": {
+		"_postman_id": "2968d5d5-e145-436d-8517-581c04c7b3c9",
+		"name": "Sentimenti",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27309880"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "initializeDatabase",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/admin/initializeDatabase",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"initializeDatabase"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NewsCollect",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/admin/collectNews/RapidAPI",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"collectNews",
+								"RapidAPI"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AnalyizeNews",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/admin/analyzeNews",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"admin",
+								"analyzeNews"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetAllUsernames",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/user/admin",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserWatchlist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/user/admin/watchlist",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"admin",
+								"watchlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/user/admin",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddToWatchlist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/user/admin/watchlist/TSLA",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"admin",
+								"watchlist",
+								"TSLA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveFromWatchlist",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/user/admin/watchlist/AAPL",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"admin",
+								"watchlist",
+								"AAPL"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "News",
+			"item": [
+				{
+					"name": "Headlines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/news/headlines",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"news",
+								"headlines"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TickerNews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/news/ticker/TSLA",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"news",
+								"ticker",
+								"TSLA"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserHeadlines",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/news/admin",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"news",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ticker",
+			"item": [
+				{
+					"name": "GetAllTickers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ticker",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ticker"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OpenAI Test",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"messages\" : [\r\n        {\r\n            \"role\" : \"user\",\r\n            \"content\" : \"Analyze a headline's sentiment for the ticker: 'TSLA'. Headline: \\\"Tesla Stock Is Soaring. It's China. The Cybertruck Halo is Helping.\\\". Only respond with either VeryPositive, Positive, Natural, Negative, VeryNegative. If the headline is unrelated to the ticker, answer Natural.\"\r\n        }\r\n    ],\r\n    \"temperature\" : 1,\r\n    \"max_tokens\": 96,\r\n    \"top_p\" : 1,\r\n    \"frequency_penalty\" : 0.0,\r\n    \"presence_penalty\" : 0.0,\r\n    \"model\" : \"gpt-3.5-turbo\"\r\n}"
+				},
+				"url": {
+					"raw": "https://api.openai.com/v1/chat/completions",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openai",
+						"com"
+					],
+					"path": [
+						"v1",
+						"chat",
+						"completions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
